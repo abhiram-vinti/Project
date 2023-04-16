@@ -5,7 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Preferences - Survey Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+    font-family: sans-serif;
+        }
+        th, td {
+    padding: 10px;
+        }
+        label {
+    margin-right: 20px;
+        }
+        button{
+    margin: 2px;
+        }
+    </style>  
 </head>
 <body>
     <h1>Food Preferences - Survey Form</h1>
@@ -76,7 +89,7 @@
                                     <td style="text-align: center;"><input type="radio" name="you_prepare" id="less often than once a month"></td>
                                 </tr>
                                 <tr>
-                                    <td>You eat out</td>
+                                    <td>You order food for home</td>
                                     <td style="text-align: center;"><input type="radio" name="you_prepare" id="everyday"></td>
                                     <td style="text-align: center;"><input type="radio" name="you_prepare" id="a few times a week"></td>
                                     <td style="text-align: center;"><input type="radio" name="you_prepare" id="once a week"></td>
@@ -96,41 +109,41 @@
                         <table>
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="food_preferences" id="Polish" value="Polish">
+                                    <input type="checkbox" name="food_origin_preference" id="Polish" value="Polish">
                                     <label for="Polish">Polish</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" name="food_preferences" id="Indian" value="Indian">
+                                    <input type="checkbox" name="food_origin_preference" id="Indian" value="Indian">
                                     <label for="Indian">Indian</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="food_preferences" id="Italian" value="Italian">
+                                    <input type="checkbox" name="food_origin_preference" id="Italian" value="Italian">
                                     <label for="Italian">Italian</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" name="food_preferences" id="Spanish" value="Spanish">
+                                    <input type="checkbox" name="food_origin_preference" id="Spanish" value="Spanish">
                                     <label for="Spanish">Spanish</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="food_preferences" id="Asian" value="Asian">
+                                    <input type="checkbox" name="food_origin_preference" id="Asian" value="Asian">
                                     <label for="Asian">Asian</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" name="food_preferences" id="Chinese" value="Chinese">
+                                    <input type="checkbox" name="food_origin_preference" id="Chinese" value="Chinese">
                                     <label for="Chinese">Chinese</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="food_preferences" id="American" value="American">
+                                    <input type="checkbox" name="food_origin_preference" id="American" value="American">
                                     <label for="American">American</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" name="food_preferences" id="Other" value="Other">
+                                    <input type="checkbox" name="food_origin_preference" id="Other" value="Other">
                                     <label for="Other">Other</label>
                                 </td>
                             </tr>
@@ -140,14 +153,17 @@
                 <tr>
                     <td>6.  Given an option, would you go vegan?</td>
                     <td>
-                        <input type="radio" id="Preference" name="Sure">
+                        <input type="radio" id="Preference" name="vegan">
                         <label for="Preference">Sure</label>
-                        <input type="radio" id="Preference" name="No">
+                        <input type="radio" id="Preference" name="vegan">
                         <label for="Preference">No</label>
                     </td>
                 </tr>
                 <tr>
-                    <td><button>Submit</button><button type="reset">Reset</button></td>
+                    <td>
+                        <button>Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
